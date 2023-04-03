@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Poppins;
+    color: #2c2e2d;
+}
+.navigation{
+    background-image: url(../Asset/spacebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.nav {
+    transform: translateY(300px);
+}
+.cube{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 8s linear infinite;
+    
+}
+.cube-front{
+
+    height: 220px;
+    width: 140px;
+    position: absolute;
+    background: transparent;
+    z-index: 99;
+    cursor: pointer;
+}
+p{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-family: "orbitron";
+}
+.welcome, .universe{
+    left: 5px;
+}
+.to, .my{
+    left: 40px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#210096, #9b05f2);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);;
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(50px);
+    transition: 1s ease;
+}
+.top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #ab19ff;
+    transform: translateZ(-180px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(156, 25, 255 0.2)
+    , 0 0 200px rgba(156, 25, 255, 0.4)
+    , 0 0 300px rgba(156, 25, 255, 0.6)
+    , 0 0 400px rgba(156, 25, 255, 0.8)
+    , 0 0 500px rgba(156, 25, 255, 1)
+
+}
+.link{
+    position: absolute;
+    transform: translateY(-30%);
+    float: right;
+}
+.cube1{
+    position: absolute;
+    left: 0;
+    top: 120px;
+    transition: 1s ease;
+}
+.cube2{
+    position: absolute;
+    right: 0;
+    top: 70px;
+   transition: 1s ease;
+}
+.cube3{
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    transition: 1s ease;
+}
+.cube4{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    transition: 1s ease;
+}
+.cube5{
+    position: absolute;
+    left: 80px;
+    top: 380px;
+    transition: 1s ease;
+}
+
+#icon{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.button {
+    position: absolute;
+    left: 49%;
+    z-index: -1;
+    transition: 1s ease;
+}
+
+#close {
+    font-size: 40px;
+    color: #b96df2;
+    cursor: pointer;
+}
+#close:hover{
+    color: gray;
+}
+p.home {
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+p.info{
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+p.portfolio{
+    font-size: 5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+p.services{
+    font-size: 5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+section #sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    background: rgba(1, 1, 1, 0.8);
+    transition: 1s ease;
+}
+.close-button{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+   cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #004469, #02f0d8);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #004469;
+}
+@media only screen and (max-width: 768px) {
+    
+  
+}
+
+@media only screen and (max-width: 900px) {
+    
+}

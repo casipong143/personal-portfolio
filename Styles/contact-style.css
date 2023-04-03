@@ -1,0 +1,156 @@
+.contact-nav{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    height: 55px;
+    width: 60px;
+    background: linear-gradient(#210096, #9b05f2);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 3px #222;
+}
+.contact-nav:hover{
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 2px 3px #b96df2;
+}
+.contact-nav:hover #contact-icon{
+   color: #222;
+}
+#contact-icon{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    transition: 0.3s ease;
+}
+.top-bar{
+    position: absolute;
+    height: 75vh;
+    width: 80%;
+    background: rgba(1, 1, 1, 0.8);
+    transition: 0.5s ease;
+    left: 10%;
+    border-radius: 10px;
+    top: -100%;
+}
+.contact-section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.direct-contact-container{
+    height: 55vh;
+    min-width: 50%;
+    margin: 15px auto;
+}
+.input-modify{
+    background: transparent;
+    border: 1px solid gray;
+    padding: 8px;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+}
+.input-modify::placeholder{
+    padding-left: 10px;
+    color: white;
+}
+.input-modify:focus{
+    box-shadow: 0px 0px 10px 1px #b96df2;
+    outline: none;
+}
+.send-btn{
+    border: 1px solid gray;
+    background: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
+}
+.send-btn:hover{
+     border: 1px solid #9b05f2;
+     box-shadow: 0px 0px 10px 1px #b96df2;
+     color: #9b05f2;
+                    
+}
+.account{
+    display: inline;
+    font-size: 3rem;
+    padding: 5px;
+    margin: 10px;
+}
+#contact-text{
+    font-family: "orbitron";
+    background: linear-gradient(to right, #9b05f2,#210096);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 40px;
+}
+#head-or{
+    color: white;
+    font-size: 30px;
+    font-family: "orbitron";
+    padding-top: 10px;
+}
+#myaddress{
+    font-size: 14px;
+    color: white;
+    margin: 20px auto;
+    line-height: 10px;
+}
+.icon{
+    background: linear-gradient(to right, #9b05f2,#210096);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.other-contact{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+#others{
+    font-size: 12px;
+    color: white;
+}
+.close-btn-top-bar{
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 765px) {
+    .easy-contact{
+        margin-top: 300px;
+    }
+    .send-btn{
+        margin-bottom: 20px;
+    }
+    .account{
+        font-size: 2rem;
+        padding-bottom: 100px;
+    }
+    .close-btn-top-bar{
+        top: 2%;
+    }
+    .sendmsg{
+        line-height: 80px;
+    }
+  
+}
+
+@media only screen and (max-width: 900px) {
+    .account{
+        font-size: 2.5rem;
+    }
+}

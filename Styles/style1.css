@@ -1,0 +1,159 @@
+.cube1{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 8s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(90deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.cube1 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.cube1 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#006269, #00f08c);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(25px);;
+}
+.top1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(25px);
+    transition: 1s ease;
+}
+.top1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: #00f08c;
+    transform: translateZ(-90px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(156, 25, 255 0.2)
+    , 0 0 200px rgba(156, 25, 255, 0.4)
+    , 0 0 300px rgba(156, 25, 255, 0.6)
+    , 0 0 400px rgba(156, 25, 255, 0.8)
+    , 0 0 500px rgba(156, 25, 255, 1);
+    transition: 1s ease;
+
+}
+.cube1:hover .top1{
+    background: #78fac4;
+    box-shadow: 0 0 1px 1px #c6f5e1;
+}
+.cube1:hover {
+    transform: scale3d(2,2,2);
+}
+p.home {
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: white;
+    height: 80vh;
+    width: 70%;
+    background: rgba(1, 1, 1, 0.8);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(20%, 13%);
+    border-radius: 10px;
+}
+.expect,.unexpected,.chris{
+    font-family: "orbitron";
+    margin: 10px;
+}
+.expect{
+    color: white;
+    font-size: 3vw;
+
+}
+.the{
+    color: gray;
+    font-family: "poppins";
+    font-size: 3vw;
+    font-style: thin;
+}
+.unexpected{
+    color: #00f08c;
+    font-size: 8vw;
+}
+
+.chris{
+    color: #00f08c;
+    background: linear-gradient(to right, #006269,
+                    #00f08c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.line{
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #006269,
+                    #00f08c);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+.linkcv{
+    padding: 10px;
+    background: transparent;
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 1px solid #00f08c;
+    color: white;
+    font-family: "orbitron";
+    margin-top: 20px;
+    font-size:15px;
+    font-weight: bold;
+    box-shadow: 0 0 1px 1px #c6f5e1;
+}
+.linkcv:hover{
+    color: #00f08c;
+    box-shadow: 0 0 5px 0.5px #00f08c;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+  
+}
+
+@media only screen and (max-width: 900px) {
+    
+}

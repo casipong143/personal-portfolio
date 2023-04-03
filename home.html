@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Casipong - My Portfolio</title>
+    <link rel="stylesheet" href="Styles/main-style.css">
+    <link rel="stylesheet" href="Styles/style1.css">
+    <link rel="stylesheet" href="Styles/style2.css">
+    <link rel="stylesheet" href="Styles/style3.css">
+    <link rel="stylesheet" href="Styles/style4.css">
+    <link rel="stylesheet" href="Styles/contact-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Script/main.js"></script>
+    <script type="text/javascript" src="Script/email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("ySTBIWVtIgSw82VLj");
+       })();
+    </script>
+
+</head>
+<body>
+
+    <section class="navigation">
+      <div class="nav d-flex justify-content-center align-items-center">
+        <div class="cube" alt="Expand Me">
+          <div class="top"></div>
+          <div>
+            <span style="--i:0;"><p class="welcome text-center">WELCOME</p></span>
+            <span style="--i:1;"><p class="to text-center">TO</p></span>
+            <span style="--i:2;"><p class="my text-center">MY</p></span>
+            <span style="--i:3;"><p class="universe text-center">UNIVERSE</p></span>
+          </div>
+        </div>
+        <div class="cube-front"></div>
+        <div class="link d-none">
+          <div class="cube1 cube-link">
+          <div class="top1"><p class="home text-center">HOME</p></div>
+          <div>
+            <span style="--i:0;"><i class="fa-solid fa-house" id="icon"></i></span>
+            <span style="--i:1;"><i class="fa-solid fa-house" id="icon"></i></span>
+            <span style="--i:2;"><i class="fa-solid fa-house" id="icon"></i></span>
+            <span style="--i:3;"><i class="fa-solid fa-house" id="icon"></i></span>
+          </div>
+        </div>
+
+        <div class="cube2 cube-link">
+          <div class="top2"><p class="info text-center">ABOUT</p></div>
+          <div>
+            <span style="--i:0;"><i class="fa-solid fa-circle-info" id="icon"></i></span>
+            <span style="--i:1;"><i class="fa-solid fa-circle-info" id="icon"></i></span>
+            <span style="--i:2;"><i class="fa-solid fa-circle-info" id="icon"></i></span>
+            <span style="--i:3;"><i class="fa-solid fa-circle-info" id="icon"></i></span>
+          </div>
+        </div>
+
+        <div class="cube3 cube-link">
+          <div class="top3"><p class="portfolio text-center">PORTFOLIO</p></div>
+          <div>
+            <span style="--i:0;"><i class="fa-solid fa-folder" id="icon"></i></span>
+            <span style="--i:1;"><i class="fa-solid fa-folder" id="icon"></i></span>
+            <span style="--i:2;"><i class="fa-solid fa-folder" id="icon"></i></span>
+            <span style="--i:3;"><i class="fa-solid fa-folder" id="icon"></i></span>
+          </div>
+        </div>
+
+        <div class="cube4 cube-link">
+          <div class="top4"><p class="services text-center">SERVICES</p></div>
+          <div>
+            <span style="--i:0;"><i class="fa-brands fa-servicestack" id="icon"></i></span>
+            <span style="--i:1;"><i class="fa-brands fa-servicestack" id="icon"></i></span>
+            <span style="--i:2;"><i class="fa-brands fa-servicestack" id="icon"></i></span>
+            <span style="--i:3;"><i class="fa-brands fa-servicestack" id="icon"></i></span>
+          </div>
+        </div>
+
+       
+        </div>
+        <div class="button">
+          <i class="fa-regular fa-circle-xmark" id="close"></i>
+        </div>
+      </div>
+
+      <section id="sidebar">
+        <span class="close-button"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="d-flex d-none" id="home">
+            <div class="home-content flex-column text-center">
+              <div class="line"></div>
+              <h1 class="expect mb-2">EXPECT <span class="the">THE</span> <span class="unexpected">UNEXPECTED</span></h1>
+              <h1 class="chris">CHRISTOPHER CASIPONG</h1>
+              <button class="linkcv">Download CV</button>
+          </div>
+        </div>
+
+        <div class="d-flex d-none" id="about">
+          <div class="home-content flex-column text-center">
+            <div class="line"></div>
+            <div class="about-container">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="about-content first-about-content">
+                      <h3 class="text-center" id="about-text">ABOUT ME</h3>
+                      <div class="image-holder text-center">
+                        <img src="Asset/pic.jpg" class="self-portrait">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-content">
+                      <div class="about-description">
+                       <h3 class="name-description">Hello, I am Christopher Casipong</h3>
+                        <p class="text-description">
+                          This is my personal portfolio. I enjoy developing website and desktop applications, and unity 3d-2d games as well. I am currently a 3rd year college student taking a program Bachelor of Science in Computer Science. I am willing to be part of your business.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex d-none" id="portfolio">
+          <div class="home-content flex-column text-center">
+            <div class="line"></div>
+            <h3 class="myprojects pt-2">My Projects</h3>
+            <div class="portfolio-container">
+              <div class="container">
+                <div class="row">
+                  <div class="app-container" id="web-app-container">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="project-container base-app first-container">
+                            <div class="project-video-content">
+                              <h3 class="title">Klassik Garage Simulator</h3>
+                              <video class="video" controls autoplay>
+                                <source src="Works/Motor.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="project-container base-app">
+                            <div class="project-description-content">
+                              <h5 class="title-description">This is a unity made 2d game. It is a game where you can customize motorcycles with different given parts: Muffler, Seat, Tank, Headlight, Handlebar, Mud Guard. This is a thesis of students from a college school. I made this game with my team. </h5>
+                              <a href="https://casipong143.itch.io/klassik-garage-simulator" target="_blank">GO TO PLAY PAGE</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="project-container">
+                            <div class="project-video-content">
+                              <h3 class="title">Flappy Weird</h3>
+                              <video class="video" controls autoplay>
+                                <source src="Works/Flappy.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="project-container">
+                            <div class="project-description-content">
+                              <h5 class="title-description">This is a unity made 2d game. It is a parody of the famous game Flappy Bird. I made this game along, for fun. </h5>
+                              <a href="https://casipong143.itch.io/flappy-weird" target="_blank">GO TO PLAY PAGE</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="project-container">
+                            <div class="project-video-content">
+                              <h3 class="title">MVC CRUD Application</h3>
+                              <video class="video" controls autoplay>
+                                <source src="Works/WebApp.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="project-container">
+                            <div class="project-description-content">
+                              <h5 class="title-description">This is a web based app made from PHP, CSS, Bootstrap, Jquery, Javascript, Ajax,  MySql. This application is based on Model-View-Controller architecture.</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex d-none" id="services">
+          <div class="home-content flex-column text-center">
+            <div class="line"></div>
+            <h3 class="icreate">I CREATE...</h3>
+
+            <div class="services-container d-flex justify-content-evenly align-items-center flex-row">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="content-container" id="base-container-card">
+                      <div class="card-item text-center" id="first-card">
+                        <div class="card-content">
+                          <img src="Asset/web.png" class="webimg">
+                        </div>
+                        <div class="content-cover" id="first-card-content">
+                          <h1 class="content-cover-text d-none" id="first-card-text">WEBSITE <span class="app">APPLICATIONS</span></h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="content-container">
+                      <div class="card-item text-center" id="second-card">
+                        <div class="card-content">
+                          <img src="Asset/desk.png" class="deskimg">
+                        </div>
+                        <div class="content-cover" id="second-card-content">
+                          <h1 class="content-cover-text d-none" id="second-card-text">DESKTOP <span class="app">APPLICATIONS</span></h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="content-container">
+                    <div class="card-item text-center" id="third-card">
+                      <div class="card-content">
+                        <img src="Asset/unity.png" class="unityimg">
+                      </div>
+                      <div class="content-cover" id="third-card-content">
+                        <h1 class="content-cover-text d-none" id="third-card-text">2D - 3D <span class="app">UNITY GAMES</span></h1>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <div class="contact-nav">
+        <i class="fa-solid fa-envelope" id="contact-icon"></i>
+      </div>
+
+      <section class="top-bar">
+        <div class="contact-section">
+          <h3 class="text-center pt-3" id="contact-text">Contact Me</h3>
+              <div class="container">
+                <div class="row">
+                   <div class="col-md-6">
+                    <div class="direct-contact-container easy-contact">
+                      <div class="other-contact flex-column">
+                        <h3 class="text-center" id="head-or">Getting in touch is easy!</h3>
+                        <h3 class="text-center" id="myaddress">Purok Madanihon, Barangay Tinago, Ozamiz City</h3>
+                        <h3 class="text-center" id="myaddress">christopher.casipong16@gmail.com</h3>
+                        <h3 class="text-center" id="myaddress">Smart | +639683022435</h3>
+                        <h3 class="text-center" id="myaddress">Globe | +639453495262</h3>
+                        <h3 class="text-center" id="others">OTHERS:</h3>
+                      <div class="social-media text-center">
+                        <div class="account text-center">
+                          <a href="https://www.facebook.com/casipong143" target="_blank"><i class="fa-brands fa-facebook icon"></i></a>
+                        </div>
+                        <div class="account text-center">
+                          <a href="https://www.linkedin.com/in/christopher-casipong-5b8475236/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
+                        </div>
+                        <div class="account text-center">
+                          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-solid fa-envelope icon"></i></a>
+                        </div>
+                        <div class="account text-center" >
+                          <a href="https://www.instagram.com/casipong143/" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="direct-contact-container">
+                      <h3 class="text-center sendmsg" id="head-or">Send A Message</h3>
+                      <form>
+                        <div class="form-group p-1 text-center">
+                          <input type="text" id="name" placeholder="Full Name" class="input-modify" required>
+                        </div>
+                        <div class="form-group p-1 text-center">
+                          <input type="text" id="contact" placeholder="Phone" class="input-modify" required>
+                        </div>
+                        <div class="form-group p-1 text-center">
+                          <input type="email" id="email" placeholder="Email Address" class="input-modify" required>
+                        </div>
+                        <div class="form-group p-1 text-center">
+                          <textarea placeholder="Write Message..." class="input-modify" id="message" required></textarea>
+                        </div>
+                        <div class="form-group p-1 text-center">
+                          <button onclick="sendEmail()" id="submit" class="send-btn" type="button">Send Email</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="close-btn-top-bar">
+          <i class="fa-solid fa-xmark" id="close-top-bar-btn"></i>
+        </div>
+      </section>
+    </section>
+
+    </body>
+    
+</html>
